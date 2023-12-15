@@ -8,7 +8,7 @@ const redHatDisplay = Red_Hat_Display({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Varos",
-  description: "Teste para vaga",
+  description: "Processo Seletivo Varos",
 };
 
 export default function RootLayout({
