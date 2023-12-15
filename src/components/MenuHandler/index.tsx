@@ -20,14 +20,14 @@ export function MenuHandler({ children }: MenuProps) {
       <Dialog.Trigger asChild>{children}</Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 z-50 bg-app-black/50" />
-        <Dialog.Content className="data-[state=open]:animate-slideRight fixed top-0 z-50 flex h-screen w-full flex-col bg-app-black sm:w-[390px]">
+        <Dialog.Content className="fixed top-0 z-50 flex h-screen w-full flex-col bg-app-black data-[state=open]:animate-slideRight sm:w-[390px]">
           <div className="flex h-20 items-center justify-between border-b border-app-gray-800 px-6">
             <Image src={logo} width={100} alt="Varos Logo" />
             <Dialog.Close>
               <X />
             </Dialog.Close>
           </div>
-          <div className="flex-1 overflow-auto px-6 pt-16">
+          <div className="flex-1 overflow-auto px-6 pb-[calc(4rem+50px)] pt-16">
             <div className="flex flex-col gap-5">
               <Link
                 href="#"
