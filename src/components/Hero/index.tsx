@@ -10,9 +10,9 @@ import * as Feature from "./Feature";
 
 export function Hero() {
   return (
-    <section className="grid grid-cols-1 items-center justify-items-center gap-8 pt-16 md:grid-cols-2 md:pt-24 lg:pt-40">
+    <section className="grid min-h-[calc(100vh-5rem)] grid-cols-1 items-center justify-items-center gap-8 md:grid-cols-2">
       <div className="flex max-w-md flex-col items-center text-center md:block md:max-w-none md:text-left">
-        <h1 className="text-app-gray-100 text-4xl font-extrabold md:text-5xl lg:text-6xl">
+        <h1 className="text-4xl font-extrabold text-app-gray-100 md:text-5xl lg:text-6xl">
           Investir de forma mais inteligente passa por aqui.
         </h1>
 
@@ -26,7 +26,7 @@ export function Hero() {
           className="mt-8 flex w-fit items-center gap-3 rounded-full bg-app-green-700 px-12 py-4 text-lg font-semibold text-app-green-500 transition-all hover:brightness-75"
         >
           Comprar agora
-          <ArrayRight />
+          <ArrayRight color="#00F700" />
         </Link>
 
         <div className="mt-20 h-20 max-w-md items-center rounded-3xl bg-gradient-to-r from-[#4D5358] to-transparent p-px">

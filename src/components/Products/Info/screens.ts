@@ -61,7 +61,7 @@ export const courses = [
     Icon: PyDash,
   },
   {
-    value: "carteira-essencial",
+    value: "carteira-essencial-2",
     label: "Carteira Essencial",
     Icon: EssentialWallet,
   },

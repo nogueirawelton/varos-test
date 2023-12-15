@@ -1,4 +1,4 @@
-export function ArrayRight() {
+export function ArrayRight({ color }: { color: string }) {
   return (
     <svg
       width="20"
@@ -9,7 +9,7 @@ export function ArrayRight() {
     >
       <path
         d="M12 0L10.9 1.1L16.9 7.2H0V8.8H16.9L10.9 14.9L12 16L20 8L12 0Z"
-        fill="#00F700"
+        fill={color}
       />
     </svg>
   );

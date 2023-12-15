@@ -6,6 +6,7 @@ import { NavLink } from "./NavLink";
 import { Cart } from "../Global/Icons/Cart";
 import { User } from "../Global/Icons/User";
 import { Menu } from "../Global/Icons/Menu";
+import { MenuHandler } from "../MenuHandler";
 
 const anchors = [
   {
@@ -65,9 +66,11 @@ export function Header() {
         </div>
       </nav>
 
-      <button aria-label="Abrir menu" className="py-2 lg:hidden">
-        <Menu />
-      </button>
+      <MenuHandler>
+        <button aria-label="Abrir menu" className="py-2 lg:hidden">
+          <Menu />
+        </button>
+      </MenuHandler>
     </header>
   );
 }

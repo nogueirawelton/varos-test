@@ -8,7 +8,7 @@ import { Panels } from "./Panels";
 export function Info() {
   return (
     <RadixTabs.Root
-      className="mt-12 grid md:grid-cols-[300px_1fr] gap-8 pb-24"
+      className="mt-12 grid gap-8 md:grid-cols-[300px_1fr]"
       defaultValue="carteira-selecao"
     >
       <Tabs />

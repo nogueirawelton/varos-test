@@ -16,11 +16,13 @@ const config: Config = {
         "app-gray-100": "#F2F4F8",
         "app-gray-200": "#E2E5EB",
         "app-gray-300": "#D3D6DF",
+        "app-gray-400": "#C6CAD2",
         "app-gray-500": "#B0B7BE",
         "app-gray-700": "#4D5358",
         "app-gray-800": "#222729",
         "app-gray-900": "#131516",
 
+        "app-green-300": "#19C819",
         "app-green-500": "#00F700",
         "app-green-700": "#155B15",
       },
@@ -32,6 +34,17 @@ const config: Config = {
           },
           to: {
             height: "var(--radix-collapsible-content-height)",
+          },
+        },
+
+        slideRight: {
+          from: {
+            opacity: "0",
+            transform: "translateX(-2rem)",
+          },
+          to: {
+            opacity: "100%",
+            transform: "translateX(0)",
           },
         },
 
@@ -48,9 +61,10 @@ const config: Config = {
       animation: {
         slideDown: "slideDown 300ms linear",
         slideUp: "slideUp 300ms linear",
+        slideRight: "slideRight 200ms linear forwards",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };
 export default config;
