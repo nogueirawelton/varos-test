@@ -93,6 +93,7 @@ export function Form() {
               onChange={(e) => onChange(formatPhoneNumber(e.target.value))}
               type="text"
               placeholder="Celular"
+              maxLength={15}
               inputMode="numeric"
               className="border-app-zinc-700 placeholder:text-app-gray-600 h-12 w-full rounded-md border border-app-gray-700 bg-app-gray-800 px-6 text-app-gray-100 placeholder:text-xl"
             />
